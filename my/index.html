@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My test </title>
+
+<script src="../lib/easeljs-0.8.1.combined.js">
+</script>
+
+<script>
+var canvas;
+var stage;
+function init(){
+	canvas=document.getElementById("canvas");
+	stage=new createjs.Stage(canvas);
+	var text=new Text("test Fuck ","36px Arial", "#657");
+	text.x = 100;
+	text.y=100;
+	stage.addChild(text);
+	stage.update();
+}
+
+
+</script>
+</head>
+
+<body onLoad="init();">
+<canvas id="canvas" width="960px" height="580px"></canvas>
+
+
+</body>
+</html>
